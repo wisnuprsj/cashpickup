@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home,
+.cashopname,
+.setuseroutlet,
+.sendtobank,
+.rvtrans,
+.rekondata,
+.hottog,
+.hogtot {
   display: flex;
-  flex-direction: column;
+  height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-title {
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-hogtot,
+.menu-setuseroutlet,
+.menu-hottog,
+.menu-rvtrans,
+.menu-cashopname {
+  padding: 20px;
+}
+
+.global-wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.cashopname-wrapper {
+  display: flex;
+}
+
+.menu-parameter {
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.menu-detail {
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.table-wrapper-parameter {
+  display: flex;
+}
+
+.table-menu-setuseroutlet,
+.table-menu-hogtot-left,
+.table-menu-hogtot-right,
+.table-menu-hottog-left,
+.table-menu-hottog-right,
+.table-menu-rvtrans,
+.table-rvtrans-view,
+.hottog-detail {
+  width: 800px;
+}
+
+.table-detail-uang-kertas,
+.table-detail-uang-logam {
+  width: 800px;
+}
+
+#table-wrapper #hogtot-detail table tbody {
+  display: block;
+  height: 90px;
+  overflow: auto;
+}
+
+#table-wrapper #hogtot-detail thead,
+#table-wrapper #hogtot-detail tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#table-wrapper #hogtot-detail table thead {
+  width: calc(100% - 1em);
+}
+
+.rvtrans-detail-option {
+  width: 800px;
+  padding-left: 20px;
+}
+
+.rvtrans-detail-option label input {
+  z-index: -1;
+}
+
+.left-container {
+  width: 100%;
+  width: 1800px;
+  border-radius: 10px;
+}
+
+.right-container {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.left-top-container {
+  margin: 10px;
+  border: solid black 1px;
+  border-radius: 10px;
+}
+
+.left-bottom-container {
+  margin: 10px;
+  border: solid black 1px;
+  border-radius: 10px;
+}
+
+.left-bottom-container hr {
+  width: 90%;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  border-width: 2px;
+  border-color: black;
+}
+
+.left-bottom-container .table-upper-middle,
+.left-bottom-container .table-upper-bottom {
+  width: 600px;
+  margin-left: 150px;
+}
+
+.left-bottom-container .table-bottom-middle {
+  width: 600px;
+}
+
+.left-container .bottom-container {
+  padding: 20px;
 }
